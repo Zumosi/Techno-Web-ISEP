@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript"></script>
+  <script>
+  $( function() {
+    var availableTags = [
+      "Alexandrie",
+      "Alger",
+      "Abou Dhabi",
+      "Belgrade",
+      "Cologne",
+      "Casablanca",
+      "Everton",
+      "Francfort",
+      "Grenoble",
+      "Hong Kong",
+      "Jerusalem",
+      "Joinville",
+      "Lille",
+      "Paris",
+      "Pau",
+      "Prague",
+      "Rotterdam",
+      "Sydney",
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
+</head>
+<body>
+ 
+<div class="ui-widget">
+  <label for="tags">City </label>
+  <input id="tags">
+</div>
+</body>
+</html>

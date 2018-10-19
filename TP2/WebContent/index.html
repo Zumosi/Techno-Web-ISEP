@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Index MVC application</title>
+<link rel="stylesheet" type="text/css" href="myFirstStyle.css">
+<script src="myFirstScript.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>Index Page of the MVC Application (Lab1)</h1>
+	<form action="" name="form" onsubmit="return validateMyForm()" method="post">
+
+		<fieldset class="sexbordure" >
+			<legend class="sex"> Personal information: </legend>
+			<label > First Name: </label> 
+			<input type="text" name="fName" />
+				<br>
+			<label for="lastName">Last Name: </label>  
+			<input type="text" name="lName" /><br>
+		</fieldset>
+
+
+		<fieldset class="sexbordure" > 
+			<legend class="sex">Birth Day:</legend>
+			<label> Date :</label>
+			<input type="text" name="bDay" /><br>
+		</fieldset>
+		
+		<fieldset class="sexbordure" >
+		<legend class="sex" > Sex : </legend>
+		
+		<label> Male :</label>
+		<input type="radio" name="sex" value="male" id="homme" checked onclick="toogleFM('red','monsieur')"> 
+		
+		<label> Female :</label> 
+		<input type="radio" name="sex" value="female" id="femme" onclick="toogleFM('blue', 'madame')"> <br>
+		
+		</fieldset>
+		<input type="submit" />
+	</form>
+</body>
+</html>
